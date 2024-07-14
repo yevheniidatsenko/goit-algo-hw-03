@@ -5,7 +5,7 @@ from pathlib import Path
 def get_args():
     parser = argparse.ArgumentParser(description="Image sorting script")
     parser.add_argument("-S", "--source", type=Path, default=Path("./pictures"), help="Images directory")
-    parser.add_argument("-O", "--output", type=Path, default=Path("output"), help="Sorted images directory")
+    parser.add_argument("-O", "--output", type=Path, default=Path("dist"), help="Sorted images directory")
     parser.add_argument("-v", "--verbose", action="store_true", help="Verbose mode")
     return parser.parse_args()
 
